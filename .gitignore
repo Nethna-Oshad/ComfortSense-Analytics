@@ -1,0 +1,36 @@
+# Environments & Secrets
+venv/
+env/
+.env
+.env.local
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+
+# Data & Models (Keep local data off GitHub)
+data/raw/*
+data/processed/*
+backend/models/*.pkl
+*.csv
+*.dat
+*.log
+
+# Allow folder structure to be pushed without the files inside them
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!backend/models/.gitkeep
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
